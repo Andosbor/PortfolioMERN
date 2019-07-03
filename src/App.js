@@ -17,8 +17,10 @@ class App extends Component{
       <div>
         <NavBar />
         <Switch>
-          <Route exact path="/about" component={ Home } />
-          <Route exact path="/contact" component={ Contact } />
+          <Route exact path="/" component={ Home } />
+          <Route path="/contact" component={ Contact } />
+          <Redirect from='*' to='/' />
+
 
         </Switch>
 

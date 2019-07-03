@@ -11,7 +11,6 @@ const Home = (props) => {
         <div>
             
             <body>
-            <NavBar/>
 
             {/* <header id="masthead">
                 <div class="container">
