@@ -1,42 +1,36 @@
-import React from "react";
+import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import DownloadLink from "react-download-link";
+import { Document } from 'react-pdf/dist/entry.webpack';
 import NavBar from '../../components/NavBar';
+import ResumePic from '../../assets/images/technicalResumePic.png';
 import "./styles.css";
 
-const Contact = (props) => {
+const Resume = (props) =>   {
+
+ 
+
     return (
-       
-            
-       
-       
-            
-            
-<div id="main-container" class="container">
-    <section class="main-section">
-      <h1>Contact</h1>
+                    
+      <div id="main-container" className="container">
+          
+      <section class="main-section">
+        <h1>Resume</h1>
+        <img src={ ResumePic } alt="Andrew Osborn Resume"/>
+  
+        {/* <DownloadLink
+    filename={"TechnicalResume.pdf"}
+    exportFile={() =>  "./TechnicalResumeAO.pdf" }
+>
+        Save to disk
+</DownloadLink> */}
 
-      <form id="contact-form">
-        <ul/>
-          <li>
-            LinkedIn: <a href="https://www.linkedin.com/in/andrew-osborn-a14219122/">Andrew Osborn</a>
-          </li>
-          <li>
-            GitHub: <a href="https://github.com/Andosbor">Andosbor</a>
-          </li>
-          <li>
-            Email: andrewosborn101@gmail.com
-          </li>
-          <li>
-            Phone Number: 512-826-0153
-          </li>
-    
-      </form>
+      </section>
+  
+    </div>
 
-    </section>
+    );
+  }
 
-  </div>
 
-  );
-}
-
-export default Contact;
+export default Resume;

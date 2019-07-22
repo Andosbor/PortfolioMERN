@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import NavBar from '../../components/NavBar';
+import myFace from '../../assets/images/myFace.jpg';
 import "./styles.css";
 
 const Home = (props) => {
@@ -29,7 +30,7 @@ const Home = (props) => {
         
                 <h1>About Me</h1>
 
-                <img src="./assets/images/myFace.jpg" class="auth-image" alt="Andrew Osborn"/>
+                <img src={myFace} class="auth-image" alt="Andrew Osborn"/>
 
                 <p>I’m a big creator in the world of media. I graduated from the school of Electronic Media and Communication where I obtained a wealth of knowledge surrounding all media.</p>
 

@@ -22,7 +22,7 @@ render() {
             
           </Nav>
           <Nav>
-            <Nav.Link href="about">About</Nav.Link>
+            <Link to="about">About</Link>
             <Nav.Link href="portfolio">
               Portfolio
             </Nav.Link>
